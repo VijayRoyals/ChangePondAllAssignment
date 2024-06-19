@@ -1,0 +1,96 @@
+The concat() method concatenates (joins) two or more arrays.
+
+The concat() method returns a new array, containing the joined arrays.
+
+The concat() method does not change the existing arrays.
+The simplest way to merge arrays is by using the concat() method. 
+It creates a new array that includes the elements from all the arrays provided as arguments.
+
+The JavaScript spread operator (...) 
+allows us to quickly copy all or part of an existing array or object into another array or object.
+Array destructuring:is a unique technique that allows you to neatly extract an array’s value into new variables.
+Destructuring is a JavaScript expression that allows us to extract data from arrays, objects, and maps and set 
+them into new, distinct variables. 
+Destructuring allows us to extract multiple properties, or items, from an array​ at a time.
+
+
+12/06/2024: 
+
+*TypeScript: it is superset of javascript. 
+                -it is compile language. 
+                -it is the strict type language. 
+*software pre-requist: 
+1.nodejs 
+node -v // it will show node version. 
+npm -v (node package mangaer) where we can find all the libraries it comes automatically 
+2.TypeScript: 
+npm i typescipt -g // 
+tsc -v // it will display typescript version.
+npx tsc -v 
+
+
+js is first 
+es5 2009 
+es6 2015 
+ts
+
+*we can create ts file by writing filename.ts 
+how to executed typescipt file 
+step1:to compile the ts file by using (ts filename.ts ) //it will compile ts file and genrate plain js file. 
+step2:node filename.js // it will execute js file 
+
+
+*how to create variable in typescript 
+syntax: let variableName:datatype; 
+
+*data 
+
+*oops 
+1.class:it is collection of data-memeber and memeber-function. 
+        -it is template which we can reuse. 
+        -to create a class we use class keyword. 
+        -class name must start with capital letter.
+        class Classname{
+            data-memeber and memeber-function
+         }
+-this keywword:it reperesent current or currnet object. 
+2.object:  it is instance of class. 
+            -by using object we can access class data-memeber and memeberfunction oustide class 
+            syntax: let objName = new Classname(); 
+
+            -constructor: it is special memeber function of class. 
+                        -constructor execute automaticall when class object is created or intialize 
+                        -constructor name must be only constructor in typescript 
+3.Inheritance: Accessing parent class property into child class. 
+                    to perform inheritance inbetween two class we use "extends" keyword.
+                    syntax : class childClassNames extends parentClassName.
+                    -super(): -it is reperesent parentclass inside the child class
+
+4.polymorphism: ability to take more than one  form.
+-method overloading: in this we have multiple method with same in same class 
+-method overriding : in this we have multiple method with same name in different classes 
+5.Abstraction: hiding internal and showing functionalities 
+hiding implemenetation and showing only functionality. 
+-we can achieve by using interface and abstraction method,static keyword. 
+
+access Specifier: 
+public: we can access class property inside  same class, outside class and in child class also 
+protected: we can access class property inside same class, in child classbut not outside class
+private:we can access property only within the class or within same class.
+6.Encapsulation:wrapping or binding of data into single Unit. 
+
+*module in type: it can be collection of single or multiple typescript file, containing code with specific 
+                    purpose or task or operation that data or code we can access in another file by exporting and 
+                    importing 
+                    -we use export keyword to send data. 
+                    -we use importing keyword to access data. 
+
+
+
+
+*Interface: it is signature of class. 
+                -it contain abstract method in it . 
+                -in interface we do not implemenetation. 
+                -its child class has a responsibility to implement interface. 
+                -we create a interface by using interface keyword 
+                --to perform inheritance in b/w class and interface we use "implements" keyword

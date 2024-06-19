@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Images</title>
+<style>
+  #image-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  img {
+    max-width: 300px;
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<div id="image-container">
+  <img id="image1" src="https://images.unsplash.com/photo-1571315168033-5c0b5856186e?w=420&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8OTM3OTg4NHx8ZW58MHx8fHx8" alt="Image 1">
+  <img id="image2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIpzPXgnz8LSsUhw2zlxNmV1TiR4L1ett_LA&s" alt="Image 2">
+  <p id="image1-name">Peacock</p>
+  <p id="image2-name">Lion</p>
+</div>
+
+<button onclick="toggleImage()">Toggle Image</button>
+
+<script>
+  let currentImage = 1;
+
+  function toggleImage() {
+    if (currentImage === 1) {
+      document.getElementById('image1').style.display = 'block';
+      document.getElementById('image2').style.display = 'none';
+      document.getElementById('image1-name').style.display = 'block';
+      document.getElementById('image2-name').style.display = 'none';
+      currentImage = 2;
+    } else {
+      document.getElementById('image1').style.display = 'none';
+      document.getElementById('image2').style.display = 'block';
+      document.getElementById('image1-name').style.display = 'none';
+      document.getElementById('image2-name').style.display = 'block';
+      currentImage = 1;
+    }
+  }
+</script>
+
+</body>
+</html>

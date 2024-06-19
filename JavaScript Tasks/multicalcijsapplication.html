@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Calculator App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+           
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+           margin-top:50px;
+
+        }
+
+        .section {
+            display: none;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .nav-buttons button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 20px;
+            flex: 1 1 45%;
+            max-width: 29%;
+            box-sizing: border-box;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+            width: calc(100% - 22px);
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #008CBA;
+            color: white;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: #005f6b;
+        }
+
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .section-title {
+            color: #008CBA;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .nav-buttons button {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+
+            input, button {
+                width: 100%;
+            }
+        }
+        .addbuttoncalci { 
+            width: 137px; 
+            height: 73px;   
+        }
+        .converttemperaturebuttonmulticalciapp{ 
+            width: 150px;
+            margin-left: 200px;
+        }
+  
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="section calculator" style="display:block;">
+            <h2 class="section-title">Calculator</h2>
+            <input type="number" id="num1" placeholder="Enter first number">
+            <input type="number" id="num2" placeholder="Enter second number">
+            <button class="addbuttoncalci" onclick="calculate('add')">Addition (+)</button>
+            <button  class="addbuttoncalci" onclick="calculate('subtract')">Subtraction (-)</button>
+            <button  class="addbuttoncalci" onclick="calculate('multiply')">Multiplication (*)</button>
+            <button  class="addbuttoncalci" onclick="calculate('divide')">Division (/)</button>
+            <p class="result">Result: <span id="calcResult"></span></p>
+        </div>
+        
+        <div class="section temperature-converter">
+            <h2 class="section-title">Temperature Converter</h2>
+            <input type="number" id="celsius" placeholder="Enter temperature in Celsius">
+            <button class="converttemperaturebuttonmulticalciapp" onclick="convertTemperature()">Convert</button>
+            <p>Fahrenheit: <span id="fahrenheit"></span></p>
+        </div>
+        
+        <div class="section currency-converter">
+            <h2 class="section-title">Currency Converter</h2>
+            <input type="number" id="rupees" placeholder="Enter Rupees">
+            <button onclick="convertCurrency()">Convert</button>
+            <p>Dollar: <span id="dollar"></span></p>
+            <p>Pound: <span id="pound"></span></p>
+            <p>Dinar: <span id="dinar"></span></p>
+        </div>
+        
+        <div class="section weight-converter">
+            <h2 class="section-title">Weight Converter</h2>
+            <input type="number" id="grams" placeholder="Enter weight in grams">
+            <button onclick="convertWeight()">Convert</button>
+            <p>KG: <span id="kg"></span></p>
+            <p>Pounds: <span id="pounds"></span></p>
+            <p>LBS: <span id="lbs"></span></p>
+            <p>Ton: <span id="ton"></span></p>
+        </div>
+        
+        <div class="section percentage-calculator">
+            <h2 class="section-title">Percentage Calculator</h2>
+            <input type="number" id="totalMarks" placeholder="Enter total marks">
+            <input type="number" id="obtainedMarks" placeholder="Enter obtained marks">
+            <button onclick="calculatePercentage()">Calculate</button>
+            <p>Percentage: <span id="percentage"></span></p>
+        </div>
+        
+        <div class="section age-calculator">
+            <h2 class="section-title">Age Calculator</h2>
+            <input type="date" id="dob">
+            <button onclick="calculateAge()">Check Age</button>
+            <p>Age: <span id="age"></span></p>
+        </div>
+        
+        <div class="nav-buttons">
+            <button onclick="showSection('calculator')">Calculator</button>
+            <button onclick="showSection('temperature-converter')">Temperature Converter</button>
+            <button onclick="showSection('currency-converter')">Currency Converter</button>
+            <button onclick="showSection('weight-converter')">Weight Converter</button>
+            <button onclick="showSection('percentage-calculator')">Percentage Calculator</button>
+            <button onclick="showSection('age-calculator')">Age Calculator</button>
+        </div>
+    </div>
+
+
+    <script>
+        function showSection(sectionClass) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.querySelector(`.${sectionClass}`).style.display = 'block';
+        }
+
+        function calculate(operation) {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            let result;
+
+            switch (operation) {
+                case 'add':
+                    result = num1 + num2;
+                    break;
+                case 'subtract':
+                    result = num1 - num2;
+                    break;
+                case 'multiply':
+                    result = num1 * num2;
+                    break;
+                case 'divide':
+                    result = num1 / num2;
+                    break;
+            }
+            
+            document.getElementById('calcResult').innerText = result;
+        }
+
+        function convertTemperature() {
+            const celsius = parseFloat(document.getElementById('celsius').value);
+            const fahrenheit = (celsius * 9/5) + 32;
+            document.getElementById('fahrenheit').innerText = fahrenheit;
+        }
+
+        function convertCurrency() {
+            const rupees = parseFloat(document.getElementById('rupees').value);
+            const dollar = rupees * 0.012;
+            const pound = rupees * 0.0086;
+            const dinar = rupees * 0.0036;
+            
+            document.getElementById('dollar').innerText = dollar.toFixed(2);
+            document.getElementById('pound').innerText = pound.toFixed(2);
+            document.getElementById('dinar').innerText = dinar.toFixed(2);
+        }
+
+        function convertWeight() {
+            const grams = parseFloat(document.getElementById('grams').value);
+            const kg = grams / 1000;
+            const pounds = grams * 0.00220462;
+            const lbs = grams * 0.00220462;
+            const ton = grams / 1e6;
+            
+            document.getElementById('kg').innerText = kg.toFixed(2);
+            document.getElementById('pounds').innerText = pounds.toFixed(2);
+            document.getElementById('lbs').innerText = lbs.toFixed(2);
+            document.getElementById('ton').innerText = ton.toFixed(6);
+        }
+
+        function calculatePercentage() {
+            const totalMarks = parseFloat(document.getElementById('totalMarks').value);
+            const obtainedMarks = parseFloat(document.getElementById('obtainedMarks').value);
+            const percentage = (obtainedMarks / totalMarks) * 100;
+            
+            document.getElementById('percentage').innerText = percentage.toFixed(2);
+        }
+
+        function calculateAge() {
+            const dob = new Date(document.getElementById('dob').value);
+            const diff = Date.now() - dob.getTime();
+            const age = new Date(diff).getUTCFullYear() - 1970;
+            
+            document.getElementById('age').innerText = age;
+        }
+
+        // Show the first section by default
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('calculator');
+        });
+    </script>
+</body>
+</html>

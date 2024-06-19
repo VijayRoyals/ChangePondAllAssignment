@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Actor</title>
+<style>
+  /* CSS for styling */
+  .actor-image {
+    width: 200px;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+
+<!-- HTML for buttons and image -->
+
+
+<div>
+  <img id="actorImage" class="actor-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlniUYe3nQIqOmzjsggYVpI-NxhOIjhTg1Xg&s" alt="Actor Image">
+  <p id="actorName"></p>
+</div>
+<div>
+    <button onclick="displayActor('pawankalyan')">Pawan Kalyan</button>
+    <button onclick="displayActor('ramcharan')">Ram Charan</button>
+    <button onclick="displayActor('chirangeevi')">Chiranjeevi</button>
+    <button onclick="displayActor('vijay')">Vijay</button>
+    <button onclick="displayActor('AlluArjun')">AlluArjun</button>
+  </div>
+
+<script>
+  // JavaScript function to display actor image and name
+  function displayActor(actor) {
+    var actorImage = document.getElementById('actorImage');
+    var actorName = document.getElementById('actorName');
+
+    // Set the image source based on the selected actor
+    switch(actor) {
+      case 'pawankalyan':
+        actorImage.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWfoCieedmFqvELyyMmdTxzKrMcNRChrzY1A&s';
+        actorName.textContent = 'Pawan Kalyan';
+        break;
+      case 'ramcharan':
+        actorImage.src = 'https://surencarter.files.wordpress.com/2009/07/magadheera_stills_suren12.jpg';
+        actorName.textContent = 'Ram Charan';
+        break;
+      case 'chirangeevi':
+        actorImage.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOUAV2zfnE60w2bY0kgP5igbTI861JUREzoQ&s';
+        actorName.textContent = 'Chiranjeevi';
+        break;
+      case 'vijay':
+        actorImage.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8BJWHEJivqi9PaYvWntCfyJ-3yizPqOBoig&shttps://i.pinimg.com/736x/26/89/dd/2689dd63db827052e5a4e0eb057d5780.jpg';
+        actorName.textContent = 'Vijay';
+        break;
+      case 'AlluArjun':
+        actorImage.src = 'https://static.toiimg.com/thumb/imgsize-23456,msid-109644222,width-600,resizemode-4/109644222.jpg';
+        actorName.textContent = 'Allu Arjun';
+        break;
+      
+    }
+  }
+</script>
+
+</body>
+</html>
