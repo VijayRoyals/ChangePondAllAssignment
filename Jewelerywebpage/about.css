@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+.imagelogo { 
+    width:110px; 
+    height:100px; 
+    padding:5px;
+    margin:2px;
+    border-radius:30px;
+    
+} 
+
+.shopname { 
+    padding:5px; 
+    margin: 2px; 
+    font-size:70px;
+    text-align: center;
+    font-family: Sans-Serif;
+    color:#a81735;
+    
+} 
+.searchbutton  { 
+    padding:10px;
+    margin:2px;
+    width:75px;
+    height:45px;
+    text-align: center;
+    border-radius: 25px; 
+    color:grey; 
+    margin-top:5px;
+    margin-left:10px;
+    margin-right: 10px;
+    
+} 
+.aheading { 
+    font-size:40px; 
+   font-weight: 100;
+    padding:3px;
+    margin-left: 30px;
+    margin-top:10px;
+} 
+.a2heading { 
+    font-size:50px; 
+   font-family: Segoe UI; 
+    font-weight: bold; 
+    padding:3px;
+    margin-left:60px;
+} 
+.aparagraph { 
+    font-size:25px; 
+    padding:5px;
+    font-weight: 100;
+} 
+.aboutuscontainerss { 
+    margin-top:10px; 
+} 
+.imageaboutowneer{ 
+    width:400px; 
+    height:400px; 
+} 
+.footerdevelopebyvijay { 
+     font-size:30px; 
+     font-family: Monospace;
+     margin-left:100px;
+     color:grey;
+}
+    .showRoomContainerOne, .showRoomContainerTwo, .showRoomContainerThree, .showRoomContainerFour, .showRoomContainerFive {
+        height: 200px;
+        width: 500px;
+        padding: 10px;
+        background-color: #a41b39; 
+        border-radius: 100%; 
+              box-sizing: border-box; 
+    font-family: 'Roboto', 'Cormorant';
+
+    text-align: center;
+    color:#ffffff;
+   
+}
+
+
+    
+.showRoomContainer {
+        display: grid;
+       column-gap: 8%;
+       background-color: #fff8f4;
+    display: flex; 
+    justify-content: center; 
+    gap: 1%; 
+    align-items: center; 
+    height: 300px;
+        height: auto;
+        padding: 50px;
+        grid-template-columns: repeat(5, 100px);
+   
+}
+.ceo-map-left-container{ 
+    align-self: stretch;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 700px;
+    width: 41.6667%;
+    min-height: 500px !important;
+}
+.ceo-map-right-container{ 
+   align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 700px;
+    width: 58.3333%;
+    min-height: 500px !important;
+}
+.ourStoryTitle{
+ 
+    font-size: 40px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 12px !important;
+    letter-spacing: 1.8px;
+    text-align: left;
+    margin-top:25px;
+  
+}
+.richContent-root-Byp p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+.ourStorySubTitle {
+  
+
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 120px !important;
+    letter-spacing: normal;
+    text-align: left;
+  
+    font-size: 8vw;
+        line-height: 1 !important;
+            margin-bottom: 1rem;
+ 
+}
+
+.ourStoryParaText {
+        font-size: 1.5vw;
+        line-height: 1.5 !important;
+        opacity: 0.75;
+  
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+
+    letter-spacing: normal;
+    text-align: left;
+   
+}
+.richContent-root-Byp img {
+    max-width: 100%;
+    margin: 1rem 0;
+
+}
+    .ceoImageWithMap {
+        width: 530px;
+    }
+    .html-root-Uwa img {
+    max-width: 100%;
+}
+    .imageContainerCeo {
+        top: 20%;
+    }
+.ourmisssionheadingofthemain{ 
+    font-size:30px; 
+    font-family: none; 
+     margin-left: 20px;
+} 
+.ourmisssionheadingofthsubheading{ 
+    font-size:50px; 
+    font-family: Monospace; 
+    margin-left: 20px;
+} 
+
+.ourmisssionheadingoftheparagraph { 
+    font-size:20px; 
+   font-family:none;
+   font-weight: 100;
+    margin-left: 20px;
+}
+.ourmissionimageofthek { 
+    width:200px; 
+    height:300px; 
+} 
+.ourmissionofthebackgroundimage { 
+    background-color: #bdbbbb;
+}

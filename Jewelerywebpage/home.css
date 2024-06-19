@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.form-inline { 
+    display:flex; 
+}
+.imagelogo { 
+    width:110px; 
+    height:100px; 
+    padding:5px;
+    margin:2px;
+    border-radius:30px;
+    
+} 
+
+.shopname { 
+    padding:5px; 
+    margin: 2px; 
+    font-size:70px;
+    text-align: center;
+    font-family: Sans-Serif;
+    color:#a81735;
+    
+} 
+.searchbutton  { 
+    padding:10px;
+    margin:2px;
+    width:75px;
+    height:45px;
+    text-align: center;
+    border-radius: 25px; 
+    color:grey; 
+    margin-top:5px;
+    margin-left:10px;
+    margin-right: 10px;
+    
+} 
+.form-control { 
+    padding:10px; 
+    margin:2px; 
+    width:200vw; 
+    height:45px;
+    border-radius: 30px;
+      
+} 
+
+.modelimagecard { 
+    border:solid 0px ; 
+    background-color: #F8EDDA;
+} 
+.img-fluid{ 
+ background-color: #F8EDDA;
+}
+.iconscontainer {
+    background-color: #d4c6c3;
+    color: brown;
+  opacity: 0.7;
+  border-radius: 20px;
+  margin:auto;
+    
+}
+.iconredvvv { 
+    font-family: Sans-Serif;
+    font-weight: bold; 
+    margin-top:3px;
+    padding:17px;
+}
+.cardpromises{ 
+    border-radius:2px;
+    padding:5px;
+}
+.cardpromisesimages { 
+    width:280px; 
+    height:60vh;
+    
+} 
+.ourbestsmilestext { 
+    font-size:40px; 
+    font-family: bold;
+    padding:10px; 
+    margin:5px;
+} 
+.ourbestsmilestextpara{ 
+    font-size:20px; 
+    font-weight: 100;
+    padding:10px;
+    margin:5px;
+   
+} 
+.card-title{ 
+    font-size:40px; 
+    font-family: bold;
+}
+.ourbestsmilestextpara1{ 
+    margin-left:10px; 
+    padding:20px;
+
+    font-size:20px;
+    font-weight: 100;
+} 
+.storelocatorcardandcontact { 
+    background-color:#fff8f6; 
+    margin-top:3px;
+} 
+.interstedinour { 
+    font-size:40px; 
+    font-family: Times New Roman;
+    font-weight: 100; 
+    padding-left: 30px;
+} 
+.bridal  { 
+    font-size:45px; 
+    font-family:Comic Sans MS;
+    font-weight:bold; 
+    padding:10px; 
+    padding-left:50px;
+    margin:30px; 
+} 
+.interestedinourpagra { 
+    font-size:27px; 
+    font-weight:100; 
+} 
+.imageoftheintereste { 
+    width:200px; 
+    height:300px; 
+} 
+.postionningofthenav{ 
+    position: sticky;
+}
+.footerdevelopebyvijay { 
+    font-size:30px; 
+    font-family: Monospace;
+    margin-left:100px;
+    color:grey;
+}

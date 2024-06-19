@@ -1,0 +1,8 @@
+fetchData() {
+    this.dbserv.getRecord("product").subscribe(res)=>{
+        this.myproducts = res; 
+        console.log(res);
+    } 
+}
+
+deleteData
