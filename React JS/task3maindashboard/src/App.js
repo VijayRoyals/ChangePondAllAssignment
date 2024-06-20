@@ -14,14 +14,16 @@ import MyCssComp from './components/MyCssComp';
 import ClickCounterComp from './components/ClickCounterComp';
 import HoverCounterComp from './components/HoverCounterComp';
 import MySliderComp from './components/MySliderComp';
-// eslint-disable-next-line no-unused-vars
-import router from './routing/routing';
+
+// import { LogoDev } from '@mui/icons-material';
+
+import LoginComp  from './Layout/LoginComp';
 
 function App() {
   return (
     <div className="App">
       {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={LogoDev} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -35,9 +37,9 @@ function App() {
         </a>
       </header> */}
       <h1>Welcome To React</h1>
-      <FunctionComp myName="Vijaykumar" post="Software Developer" />
-      <ClassComp myName="Vijaykumar" post="Software Developer" />
-      <MyDetails fname="Vijaykumar" lname="K" email="Vijaykumarvkvkvv@gmail.com" contact="99999999" />
+      <FunctionComp myName="VIJAY KUMAR" post="Software Developer" />
+      <ClassComp myName="VIJAY KUMAR" post="Software Developer" />
+      <MyDetails fname="VIJAY KUMAR" lname="K" email="vijaykumarvkvkvv@gmail.com" contact="99999999" />
       <MethodEventComp />
       <SetStateComp />
       <ConditionRenComp />
@@ -50,6 +52,7 @@ function App() {
       <ToggleImage />
       <MultiImgComp />
       {/* <router /> */}
+      <LoginComp /> 
     </div>
   );
 }
